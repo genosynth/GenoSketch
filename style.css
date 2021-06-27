@@ -1,13 +1,13 @@
 .container {
-  width: 680px; /*creates the size of the div box */
+  width: 680px; /*creates the size of the div box in rleative with the number of divs created inside*/
   height: 680px;
   border: 10px solid black;
 
-  top: 50%; /* this part centers the div in the centre */
+  top: -2%; /* this part centers the div in the centre */
   left: 50%;
-  position: absolute;
-  margin-top: -320px;
-  margin-left: -320px;
+  position: relative;
+  margin-top: relative;
+  margin-left: -350px;
 
   display: grid; /*this part sets the div as a grid*/
   grid-template-columns: repeat(16, auto);
@@ -21,9 +21,10 @@
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 0px;
   font-size: 30px;
   text-align: center;
+  
 }
 
 .grid-item:hover {
@@ -47,7 +48,15 @@
   }
 
 .colorButton {
-    background-color: rgb(224, 12, 231);
+    background-color: rgb(34, 194, 223);
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    height: 80px;
+    width: 80px;
+  }
+
+.resetButton {
+    background-color: rgb(151, 151, 151);
     color: rgb(0, 0, 0);
     font-size: larger;
     height: 80px;
@@ -56,6 +65,9 @@
 
 #buttons {
   text-align: center;
+  position: relative;
+  padding: 20px
+  
 }
 
 body {
@@ -72,4 +84,13 @@ body {
   );
   background-size: 1em 1em;
   height: 100vh;
+  
+}
+
+
+h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
 }
